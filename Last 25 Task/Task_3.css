@@ -1,0 +1,21 @@
+/* 
+
+The font property is a shorthand property for:
+
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family 
+
+*/
+
+.fonts {
+
+    font: italic normal bold 30px/30px Arial, sans-serif;
+    /* font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: Arial, sans-serif; */
+}

@@ -1,0 +1,30 @@
+.parent {
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    width: fit-content;
+    margin: 20px auto;
+    transition: margin-top 0.5s linear 0.0;
+    -webkit-transition: margin-top 0.5s linear 0.0;
+    -moz-transition: margin-top 0.5s linear 0.0;
+    -ms-transition: margin-top 0.5s linear 0.0;
+    -o-transition: margin-top 0.5s linear 0.0;
+}
+
+.parent:hover {
+    margin-top: 10px;
+}
+
+.parent:hover .child {
+    margin-top: 10px;
+}
+
+.child {
+    background-color: #ddd;
+    padding: 20px;
+    transition: margin-top 0.5s linear 0.5s;
+    -webkit-transition: margin-top 0.5s linear 0.5s;
+    -moz-transition: margin-top 0.5s linear 0.5s;
+    -ms-transition: margin-top 0.5s linear 0.5s;
+    -o-transition: margin-top 0.5s linear 0.5s;
+}

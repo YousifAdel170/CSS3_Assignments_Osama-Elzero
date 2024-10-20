@@ -1,0 +1,15 @@
+.one {
+    font-style: italic;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+
+.two {
+    font-family: 'Cairo';
+    font-weight: 700;
+}
+
+.three {
+    font-family: 'Jomhuria';
+    font-weight: 400;
+}

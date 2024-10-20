@@ -1,0 +1,27 @@
+html {
+    font-size: 20px;
+}
+
+/*
+    1   =>  20px
+    x   =>  50px                x = 50px / 20 px = 2.5rem
+*/
+.one {
+    font-size: 2.5rem;
+}
+
+/*
+    1   =>  20px
+    x   =>  40px                x = 40px / 20 px = 2rem
+*/
+.two {
+    font-size: 2rem;
+}
+
+/*
+    1   =>  20px
+    x   =>  30px                x = 30px / 20 px = 1.5rem
+*/
+.three {
+    font-size: 1.5rem;
+}

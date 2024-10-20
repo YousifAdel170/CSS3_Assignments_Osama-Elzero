@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    margin: 0 1%;
+    background-color: #eee;
+    height: calc(100% - 20%);
+    width: calc(100% - 2%);
+    display: grid;
+    grid-template-areas: "e l";
+    gap: 10px;
+}
+
+.e-letter {
+    grid-template-areas: "one one one" "two . ." "three three three" "four . ." "five five five";
+    position: relative;
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
+
+}
+
+.e-letter::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: orange;
+    right: 14px;
+    top: 27.25px;
+    animation: e-movement 6s linear 0s infinite normal;
+    -webkit-animation: e-movement 6s linear 0s infinite normal;
+}
+
+
+
+@keyframes e-movement {
+    0% {
+        left: 140px;
+        top: 27.25px;
+    }
+
+    5% {
+        left: 7.5px;
+        top: 27.25px;
+    }
+
+    10% {
+        left: 7.5px;
+        top: 27.25px;
+    }
+
+    15% {
+        left: 7.5px;
+        top: 350px;
+    }
+
+    20% {
+        left: 140px;
+        top: 350px;
+    }
+
+    25% {
+        left: 7.5px;
+        top: 350px;
+    }
+
+    30% {
+        left: 7.5px;
+        top: 685px;
+    }
+
+    35% {
+        left: 140px;
+        top: 685px;
+    }
+
+    40% {
+        left: 7.5px;
+        top: 685px;
+    }
+
+    45% {
+        left: 7.5px;
+        top: 350px;
+    }
+
+    47.5% {
+        left: 7.5px;
+        top: 27.25px;
+    }
+
+    50% {
+        left: 140px;
+        top: 27.25px;
+    }
+
+}
+
+.l-letter {
+    grid-template-areas: "one . ." "two . ." "three . ." "four . ." "five five five";
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
+    position: relative;
+
+}
+
+.l-letter::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: orange;
+    left: 140px;
+    top: 685px;
+    animation: l-movement 6s ease 6s infinite normal;
+    -webkit-animation: l-movement 6s ease 3s infinite normal;
+}
+
+@keyframes l-movement {
+    0% {
+        opacity: 0.0;
+        left: 140px;
+        top: 685px;
+    }
+
+    5% {
+        opacity: 1;
+        left: 140px;
+        top: 685px;
+    }
+
+    15% {
+        left: 7.5px;
+        top: 685px;
+    }
+
+    35% {
+        opacity: 1.0;
+        left: 7.5px;
+        top: 27.25px;
+    }
+
+    55% {
+        opacity: 0.0;
+        left: 7.5px;
+        top: 27.25px;
+    }
+
+    60% {
+        opacity: 0.0;
+        left: 140px;
+        top: 27.25px;
+
+    }
+
+    100% {
+        opacity: 0;
+        left: 140px;
+        top: 685px;
+    }
+}
+
+
+
+.e-letter,
+.l-letter {
+    width: 42.5%;
+    height: 100%;
+    display: grid;
+}
+
+.e-letter div,
+.l-letter div {
+    background-color: black;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}

@@ -1,0 +1,15 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #eee;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-top-left-radius: 5px 15px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 5px 15px;
+    box-shadow: inset 0px 0px 10px black;
+}

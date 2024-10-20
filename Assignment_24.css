@@ -1,0 +1,31 @@
+div {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    bottom: 75%;
+    position: absolute;
+}
+
+.green {
+    background-color: green;
+    z-index: 3;
+    margin-left: 10px;
+}
+
+.red {
+    background-color: red;
+    z-index: 4;
+    margin-left: 15px;
+    margin-bottom: -10px;
+}
+
+.blue {
+    background-color: blue;
+    z-index: 2;
+    margin-bottom: 10px;
+}
+
+.black {
+    background-color: black;
+    z-index: 1;
+}

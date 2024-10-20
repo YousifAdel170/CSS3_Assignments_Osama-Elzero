@@ -1,0 +1,68 @@
+body {
+    perspective: 800px;
+}
+
+.menu {
+    width: 30px;
+    height: 20px;
+    background-color: #eee;
+    padding: 5px 0 0;
+    right: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+}
+
+
+.menu span {
+    width: 70%;
+    height: 1px;
+    background-color: black;
+    padding: 1px 0px;
+    margin: 0 auto 3px;
+    border-radius: 5px;
+    position: relative;
+    transition: transform 0.2s 0s ease-in-out, opacity 0.2s 0s ease-in-out;
+    -webkit-transition: transform 0.2s 0s ease-in-out, opacity 0.2s 0s ease-in-out;
+    -moz-transition: transform 0.2s 0s ease-in-out, opacity 0.2s 0s ease-in-out;
+    -ms-transition: transform 0.2s 0s ease-in-out, opacity 0.2s 0s ease-in-out;
+    -o-transition: transform 0.2s 0s ease-in-out, opacity 0.2s 0s ease-in-out;
+}
+
+.menu:hover span {
+    background-color: red;
+
+}
+
+.menu:hover :last-child {
+    transform: rotate3d(0, 0, 1, 45deg) translate(-2px, -2px);
+    -webkit-transform: rotate3d(0, 0, 1, 45deg) translate(-2px, -2px);
+    -moz-transform: rotate3d(0, 0, 1, 45deg) translate(-2px, -2px);
+    -ms-transform: rotate3d(0, 0, 1, 45deg) translate(-2px, -2px);
+    -o-transform: rotate3d(0, 0, 1, 45deg) translate(-2px, -2px);
+}
+
+.menu:hover :last-child,
+.menu:hover :first-child {
+    margin: 0 auto;
+
+}
+
+.menu:hover :nth-child(2) {
+    transform: translate(-5px, 2px);
+    opacity: 0;
+    -webkit-transform: translate(-5px, 2px);
+    -moz-transform: translate(-5px, 2px);
+    -ms-transform: translate(-5px, 2px);
+    -o-transform: translate(-5px, 2px);
+
+}
+
+.menu:hover :first-child {
+    transform: rotate3d(0, 0, 1, -45deg) translate(-4px, 4px);
+    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate(-4px, 4px);
+    -moz-transform: rotate3d(0, 0, 1, -45deg) translate(-4px, 4px);
+    -ms-transform: rotate3d(0, 0, 1, -45deg) translate(-4px, 4px);
+    -o-transform: rotate3d(0, 0, 1, -45deg) translate(-4px, 4px);
+
+}

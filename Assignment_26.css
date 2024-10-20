@@ -1,0 +1,25 @@
+ul {
+    width: 400px;
+}
+
+body>ul>li {
+    background-color: #ddd;
+    list-style: none;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+ol li {
+    padding: 10px;
+    background-color: #eee;
+    margin-bottom: 5px;
+}
+
+ul ul li {
+    background-color: #eee;
+    padding: 10px;
+    width: 360px;
+    list-style-position: inside;
+    margin-bottom: 5px;
+    margin-left: -40px;
+}

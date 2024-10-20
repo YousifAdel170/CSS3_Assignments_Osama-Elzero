@@ -1,0 +1,62 @@
+.parent {
+    display: grid;
+    padding: 10px;
+}
+
+
+@media (max-width: 991px) {
+    .parent {
+        grid-template-areas: "one" "two" "three" "four";
+        gap: 10px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .parent {
+        grid-template-areas: "one one one" "two three four";
+        gap: 10px;
+    }
+
+    .parent h2 {
+        color: red;
+    }
+}
+
+@media (min-width: 1400px) {
+    .parent {
+        grid-template-areas: "one one one one " "two two three three" "four four four four";
+        gap: 10px;
+    }
+
+    .parent h2 {
+        color: #20a196;
+    }
+}
+
+
+.one,
+.two,
+.three,
+.four {
+    background-color: #eee;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.one {
+    grid-area: one;
+
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}

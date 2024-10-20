@@ -1,0 +1,4 @@
+div {
+    text-shadow: 0.5px 0.5px red, 1px 1px #02d1ff, 1.5px 1.5px blueviolet;
+    font-family: sans-serif;
+}

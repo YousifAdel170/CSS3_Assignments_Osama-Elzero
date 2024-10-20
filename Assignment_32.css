@@ -1,0 +1,40 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    margin: 15px;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: -5px -5px 0px #e91e63, 5px 5px #2196f3;
+    position: relative;
+    counter-increment: counter-numbers;
+}
+
+div::before {
+    content: "Element";
+    position: absolute;
+    top: 40px;
+    left: 25px;
+}
+
+div::after {
+    content: counter(counter-numbers);
+    position: absolute;
+    top: -10px;
+    left: 35px;
+    background-color: black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}

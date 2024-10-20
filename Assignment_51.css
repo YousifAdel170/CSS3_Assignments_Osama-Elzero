@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    height: 100vh;
+    background-color: #eee;
+    padding: 25px 25px;
+    display: grid;
+    gap: 1%;
+    grid-template-areas:
+        "osama osama ahmed shady"
+        "mohamed-ibrahim mahmoud mahmoud shady"
+        "mohamed-ibrahim ezz ezz shady"
+        "mohamed-sayed ibrahim gamal eman";
+    /* grid-template-rows: 30% 30% 30% 25%; */
+    justify-content: space-around;
+}
+
+.parent>div {
+    padding: 10px;
+    position: relative;
+}
+
+.parent>div::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: #ff3f03;
+}
+
+.parent>div::after {
+    content: "''";
+    position: absolute;
+    right: 10px;
+    bottom: -15px;
+    transform: rotate(8deg);
+    font-size: 40px;
+    color: gray;
+}
+
+
+.parent>div:not(.shady, .mahmoud, .ibrahim) {
+    background-color: white;
+}
+
+.osama div,
+.osama p:nth-of-type(2),
+.shady div,
+.mohamed-ibrahim div {
+    line-height: 1.6;
+}
+
+.shady p:nth-of-type(2),
+.mohamed-ibrahim p:nth-of-type(2) {
+    line-height: 3.6;
+}
+
+.parent .shady,
+.parent .mahmoud,
+.parent .ibrahim {
+    color: #fff;
+    background-color: #000;
+}
+
+.job-gray {
+    color: gray;
+    font-size: small;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.parent>div>div {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.parent>div>p:nth-of-type(2) {
+    font-weight: 100;
+    font-size: small;
+}
+
+.osama {
+    grid-area: osama;
+}
+
+.ahmed {
+    grid-area: ahmed;
+}
+
+.shady {
+    grid-area: shady;
+}
+
+.mohamed-ibrahim {
+    grid-area: mohamed-ibrahim;
+}
+
+.mahmoud {
+    grid-area: mahmoud;
+}
+
+.ezz {
+    grid-area: ezz;
+}
+
+.mohamed-sayed {
+    grid-area: mohamed-sayed;
+}
+
+.ibrahim {
+    grid-area: ibrahim;
+}
+
+.gamal {
+    grid-area: gamal;
+}
+
+.eman {
+    grid-area: eman;
+}

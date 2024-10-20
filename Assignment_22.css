@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.parent {
+    width: 1000px;
+    background-color: #eee;
+    text-align: center;
+    color: #000;
+    padding-top: 15px;
+}
+
+.parent .first div,
+.parent .third div,
+.parent .second div,
+.parent .fourth div {
+    padding: 15px 0;
+    background-color: #ddd;
+    margin-bottom: 15px;
+}
+
+.parent .first,
+.parent .third,
+.parent .second,
+.parent .fourth {
+    display: inline-block;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+}
+
+.parent .third div,
+.parent .second div,
+.parent .fourth div {
+    float: left;
+    overflow: hidden;
+}
+
+.center-third,
+.first-center-fourth {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.first-second,
+.second-center-fourth {
+    margin-right: 15px;
+}
+
+.parent .third div {
+    width: calc((100% - 30px) / 3);
+}
+
+.parent .fourth div {
+    width: calc((100% - 45px) / 4);
+}
+
+.parent .second div {
+    width: calc((100% - 15px) / 2);
+}
+
+.clear {
+    clear: both;
+}

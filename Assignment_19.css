@@ -1,0 +1,14 @@
+/* Change The color: #009688 */
+div {
+    border: 2px solid #ff5722;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+div p {
+    border: inherit;
+    padding: inherit;
+    background-color: #ddd;
+}
